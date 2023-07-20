@@ -1,7 +1,5 @@
 # MyKare_Health_Assignment
 
-<img align="left" alt="Coding" width="153" src="Image/logo.jpg">
-
 Built a User Management Application, where a user can register himself either as an ADMIN or as a USER. This application uses Role-based authorization.
 
 
@@ -42,7 +40,7 @@ ________________________________________________________________________________
 
 # Installation & Run
 
-Before running the API server, you should update the database config inside the application.properties file.
+Before running the API server, you should configure your database inside the application.properties file.
 
 Update the port number, username and password as per your local database config. server.port=8886
 
@@ -56,7 +54,7 @@ spring.jpa.hibernate.ddl-auto=update
 API Root Endpoint - https://localhost:8800/
 
 
-* To register user: https://localhost:8000/user/register  (Can be accessed by all)
-* To get all users: https://localhost:8000/user/all  (Can be accessed by ADMIN only)
-* To get a particular user: https://localhost:8000/user/{email} (Can be accessed by all)
-* To delete a user: https://localhost:8000/user/{email} (Can be accessed by ADMIN only)
+* (POST) To register user: https://localhost:8000/user/register  (Can be accessed by all)
+* (GET) To get all users: https://localhost:8000/user/all  (Can be accessed by ADMIN only)
+* (GET) To get a particular user: https://localhost:8000/user/{email} (Can be accessed by all)
+* (DELETE) To delete a user: https://localhost:8000/user/{email} (Can be accessed by ADMIN only)
