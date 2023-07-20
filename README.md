@@ -17,6 +17,7 @@ ________________________________________________________________________________
 * Spring Security(Basic auth)
 * Devtools
 * Lombok
+* Swagger-ui
 
 # Features :
 
@@ -51,7 +52,7 @@ spring.datasource.password=YourPassword
 spring.jpa.hibernate.ddl-auto=update`
 
 # Endpoints
-API Root Endpoint - https://localhost:8800/
+API Root Endpoint - `https://localhost:8800`
 
 Swagger enpoint: `http://localhost:8000/swagger-ui.html`
 
