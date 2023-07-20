@@ -29,9 +29,11 @@ public class UserEntity {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
+	@NotEmpty(message = "Name cannot be empty")
 	private String name;
 	
 	@Column(unique = true)
+	@NotEmpty(message = "Email cannot be empty")
 	private String email;
 	
 	@Enumerated(EnumType.STRING)
