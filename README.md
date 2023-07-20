@@ -53,11 +53,12 @@ spring.jpa.hibernate.ddl-auto=update`
 # Endpoints
 API Root Endpoint - https://localhost:8800/
 
+Swagger enpoint: `http://localhost:8000/swagger-ui.html`
 
-* (POST) To register user: https://localhost:8000/user/register  (Can be accessed by all)
-* (GET) To get all users: https://localhost:8000/user/all  (Can be accessed by ADMIN only)
-* (GET) To get a particular user: https://localhost:8000/user/{email} (Can be accessed by all)
-* (DELETE) To delete a user: https://localhost:8000/user/{email} (Can be accessed by ADMIN only)
+* (POST) To register user: `https://localhost:8000/user/register`  (Can be accessed by all)
+* (GET) To get all users: `https://localhost:8000/user/all`  (Can be accessed by ADMIN only)
+* (GET) To get a particular user: `https://localhost:8000/user/{email}` (Can be accessed by all)
+* (DELETE) To delete a user: `https://localhost:8000/user/{email}` (Can be accessed by ADMIN only)
 
 REQUEST BODY for registration
 `{
