@@ -58,3 +58,12 @@ API Root Endpoint - https://localhost:8800/
 * (GET) To get all users: https://localhost:8000/user/all  (Can be accessed by ADMIN only)
 * (GET) To get a particular user: https://localhost:8000/user/{email} (Can be accessed by all)
 * (DELETE) To delete a user: https://localhost:8000/user/{email} (Can be accessed by ADMIN only)
+
+REQUEST BODY for registration
+`{
+    "name": "Your Name",
+    "email": "youremail@gmail.com",
+    "gender": "MALE",
+    "password": "pasword",
+    "role": "user/admin"
+}`
