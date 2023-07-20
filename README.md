@@ -1,6 +1,6 @@
 # MyKare_Health_Assignment
 
-Built a User Management Application, where a user can register himself either as an ADMIN or as a USER. This application uses Role-based authorization.
+Built a User Management Application, where a user can register himself either as an ADMIN or as a USER with the application. This application uses Role-based authorization. all the exceptions are handled.
 
 
 
@@ -26,15 +26,15 @@ ________________________________________________________________________________
 
 # Admin Features:
 
-* Can get all users.
-* Can get a particular user based on email id.
+* Can find all users.
+* Can find a particular user based on email id.
 * Can access the details of different users.
 * Can delete a user based on email id.
 
 # User Features:
 
 * Register with the application and sign in.
-* Can get a particular user by email id;
+* Can find a particular user based on email id.
 
 
 
