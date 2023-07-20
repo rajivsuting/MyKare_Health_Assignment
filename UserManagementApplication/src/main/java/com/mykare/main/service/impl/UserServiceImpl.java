@@ -30,10 +30,17 @@ public class UserServiceImpl implements UserService {
 		/*If found then throw UserException(custom exception*/
 		if(opt.isPresent()) throw new UserException("User already exist with email "+user.getEmail());
 		
-		/*Encoding the password before saving it*/
-		user.setPassword(passwordEncoder.encode(user.getPassword()));
-		/*converting role into the required pattern*/
-		user.setRole("ROLE_"+user.getRole().toUpperCase());
+		/*Checking if password and roles are valid*/
+		if(user.getPassword().isEmpty()) throw new UserException("Password should not be empty");
+		
+		if(user.getRole().equalsIgnoreCase("admin") || user.getRole().equalsIgnoreCase("user")) {
+			
+			/*Encoding the password before saving it*/
+			user.setPassword(passwordEncoder.encode(user.getPassword()));
+			/*converting role into the required pattern*/
+			user.setRole("ROLE_"+user.getRole().toUpperCase());
+			
+		}else throw new UserException("Please enter a valid role Admin/User");
 		
 		return userRepository.save(user);
 	}
