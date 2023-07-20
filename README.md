@@ -42,13 +42,14 @@ ________________________________________________________________________________
 
 Before running the API server, you should configure your database inside the application.properties file.
 
-Update the port number, username and password as per your local database config. server.port=8886
+Update the port number, username and password as per your local database config. 
 
+```server.port=8000
 spring.datasource.url=jdbc:mysql://localhost:3306/mykaredb 
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.datasource.username=mysql username 
 spring.datasource.password=YourPassword 
-spring.jpa.hibernate.ddl-auto=update
+spring.jpa.hibernate.ddl-auto=update```
 
 # Endpoints
 API Root Endpoint - https://localhost:8800/
