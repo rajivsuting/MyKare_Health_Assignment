@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
+import jakarta.validation.Valid;
 import com.mykare.main.entity.UserEntity;
 import com.mykare.main.exception.UserException;
 import com.mykare.main.service.UserService;
@@ -29,7 +29,7 @@ public class UserController {
 	
 	/*Can be accessed by all*/
 	@PostMapping("/register")
-	public ResponseEntity<UserEntity> registerUser(@RequestBody UserEntity user) throws UserException {
+	public ResponseEntity<UserEntity> registerUser(@Valid @RequestBody UserEntity user) throws UserException {
 		
 		UserEntity savedUser = userService.registerUser(user);
 		
